@@ -1,0 +1,50 @@
+---
+title: "Health and Economic impact of weather events"
+author: "Nestor Sulikowski"
+date: "April 21, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Synopsis
+
+In this report we aim to describe the changes in fine particle (PM2.5) outdoor air pollution in the United States between the years 1999 and 2012. Our overall hypothesis is that out door PM2.5 has decreased on average across the U.S. due to nationwide regulatory requirements arising from the Clean Air Act. To investigate this hypothesis, we obtained PM2.5 data from the U.S. Environmental Protection Agency which is collected from monitors sited across the U.S. We specifically obtained data for the years 1999 and 2012 (the most recent complete year available). From these data, we found that, on average across the U.S., levels of PM2.5 have decreased between 1999 and 2012. At one individual monitor, we found that levels have decreased and that the variability of PM2.5 has decreased. Most individual states also experienced decreases in PM2.5, although some states saw increases.
+
+
+## Loading and Processing the Raw Data
+
+This is an R Markdown document. Markdown is a simple formatting syntax for 
+```{r cars}
+bz2FileUrl <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2"
+data <- download.file(bz2FileUrl,"StormData.csv.bz2")
+read.table(unz("StormData.csv.bz2", "StormData.csv"), header = TRUE, sep=",")
+
+```
+
+#### Reading in the 1999 data
+
+
+This is an R Markdown document. Markdown is a simple formatting syntax for 
+
+#### Reading in the 2012 data
+
+
+This is an R Markdown document. Markdown is a simple formatting syntax for 
+
+## Results
+
+
+This is an R Markdown document. Markdown is a simple formatting syntax for 
+
+#### Entire U.S. analysis
+
+
+This is an R Markdown document. Markdown is a simple formatting syntax for 
+
+#### Changes in PM levels at an individual monitor
+
+
+This is an R Markdown document. Markdown is a simple formatting syntax for 
